@@ -7,7 +7,7 @@ do
 	echo "running project $project"
 	cd $project
 	git pull
-	mvn clean install
+	mvn clean install package
 	if [ $? -eq 0 ]
 	then
 	  echo "$project,Success" >> ../project.status
